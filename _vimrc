@@ -25,7 +25,8 @@ inoremap <c-v> <esc>"+pa
 xnoremap <c-c> "+y
 
 " gui
-"set columns=112 lines=32
+set go=
 set guifont=cascadia_mono:h12
 set langmenu=en_US.UTF-8
+"set columns=112 lines=32
 
