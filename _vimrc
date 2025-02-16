@@ -2,7 +2,6 @@
 set nocompatible 
 set nobackup
 set autochdir
-language en
 
 " my maps
 nnoremap ; :
@@ -26,7 +25,7 @@ inoremap <c-v> <esc>"+pa
 xnoremap <c-c> "+y
 
 " gui
-set columns=112 lines=32
+"set columns=112 lines=32
 set guifont=cascadia_mono:h12
 set langmenu=en_US.UTF-8
 
