@@ -7,7 +7,7 @@ set autochdir
 nnoremap ; :
 nnoremap \ :w !python3<cr>
 nnoremap <c-\> :!python3 %<cr>
-"noremap <c-i> <esc>gg3O<esc>ggI
+"noremap <c-i> <esc>gg2O<esc>ggI
 
 
 " my settings
