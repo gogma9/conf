@@ -25,17 +25,18 @@ colors desert "or murphy
 " for Windows
 "
 
-" copy and paste
-"nnoremap <c-v> "+pa
-"xnoremap <c-v> "+pa
-"inoremap <c-v> <esc>"+pa
-"xnoremap <c-c> "+y
-"nnoremap <c-a> ggVG<c-O><c-O>
-"inoremap <c-a> <esc>ggVG<c-O><c-O>a
+if has("gui_running") && has("win32")
+    " copy and paste
+    nnoremap <c-v> "+pa
+    xnoremap <c-v> "+pa
+    inoremap <c-v> <esc>"+pa
+    xnoremap <c-c> "+y
+    nnoremap <c-a> ggVG<c-O><c-O>
+    inoremap <c-a> <esc>ggVG<c-O><c-O>a
 
-" gui
-"set go=
-"set guifont=cascadia_mono:h12
-"set langmenu=en_US.UTF-8
-"set columns=112 lines=32
-
+    " gui
+    set go=
+    set guifont=cascadia_mono:h12
+    set langmenu=en_US.UTF-8
+    set columns=112 lines=32
+endif
