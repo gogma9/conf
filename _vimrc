@@ -9,6 +9,7 @@ nnoremap \ :w !python3<cr>
 nnoremap <c-\> :!python3 %<cr>
 nnoremap <f3> <esc>gg3O<esc>ggI
 inoremap <f3> <esc>gg3O<esc>ggI
+nnoremap <f4> :w !python3 -c 'import sys, re; c=re.compile(r"([0-9.,]+)(?=[^0-9.,]*$)"); l=[x[1] for x in map(lambda x: c.search(x), sys.stdin.readlines()) if x]; print("\n\n"); l=[float(x.replace(",","_")) for x in l]; print(f"numbers({len(l)} items): {l}"); print(f"sum: {sum(l)}"); print(f"average: {sum(l)/len(l)}")'<cr>
 
 
 " my settings
